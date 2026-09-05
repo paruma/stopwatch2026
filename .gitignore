@@ -1,0 +1,11 @@
+# .NET build output
+[Bb]in/
+[Oo]bj/
+
+# Local visual-test output
+artifacts/
+
+# User-specific IDE settings
+*.user
+*.suo
+.vs/
