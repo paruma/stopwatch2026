@@ -10,8 +10,6 @@ permissions:
 
 jobs:
   release:
-    # v0.1.0 はこの PC で検証済みの EXE を手動で添付する。
-    if: github.ref != 'refs/tags/v0.1.0'
     runs-on: windows-latest
 
     steps:
