@@ -17,13 +17,19 @@
 - 同じEXEを複数起動できます。状態は保存しません。
 - 経過時間には桁が揺れない等幅の `Consolas` 太字を使用します。
 
-## ビルド
+## ダウンロード
+
+Windows x64 向けの自己完結版は、[GitHub Releases](https://github.com/paruma/stopwatch2026/releases) から
+`stopwatch2026-win-x64.zip` をダウンロードして展開し、`stopwatch2026.exe` を実行してください。
+
+.NET のインストールは不要です。
+
+## 自分でビルドする場合
 
 .NET 8 SDKを導入したWindowsで実行します。
 
 ```powershell
-dotnet build -c Release
-dotnet publish -c Release -r win-x64 --self-contained false
+dotnet publish -c Release -r win-x64 --self-contained true
 ```
 
 発行された単一ファイルの `stopwatch2026.exe` は次の場所にあります。
@@ -32,4 +38,4 @@ dotnet publish -c Release -r win-x64 --self-contained false
 bin\Release\net8.0-windows\win-x64\publish\stopwatch2026.exe
 ```
 
-実行するWindowsには、.NET 8 Desktop Runtime（x64）が必要です。
+自己完結版のため、実行する Windows に .NET 8 Desktop Runtime（x64）は不要です。
